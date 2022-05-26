@@ -1,1 +1,3 @@
 My first project html/css, i learn.
+And i learn that is so hard.
+And i dont now english... 
