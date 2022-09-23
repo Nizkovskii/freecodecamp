@@ -259,4 +259,99 @@ let b = +a; // в b запишется число 2*/
 
 //Функция Number работает только со строками, состоящими из цифр.
 
-//https://code.mu/ru/javascript/book/prime/basis/numbers-extraction/
+//Функция parseInt — выводит число из строки
+/*let num = parseInt('12px');
+alert(num);*/
+// Но если число будет дробное, например let num = parseInt('12.5px'); то при выведется только 12
+//Как решить эту проблему?
+//На этот случай есть parseFloat
+/*let num = parseFloat('12.5px');
+alert(num);
+Отсутствие дробной части не мешает функции parseFloat работать корректно*/
+
+//Дана переменная со значением '5px' и переменная со значением '6px'. Найдите сумму пикселей из значений этих переменных и выведите ее на экран.
+
+/*let num = parseInt('5px');
+let num2 = parseInt('6px');
+alert(num + num2);*/
+
+//Преобразование к строке в JavaScript
+
+/*let num1 = 1;
+let num2 = 2;
+alert(String(num1) + String(num2)); выведет 12
+
+Это обратное преобразование из числа в строку*/
+
+//Если захотим посчитать количество символов в числах, но получится undefined, такак функция length относится только к строкам
+
+/*let num = 12345;
+let str = String(num);
+alert(str.length); выведет 5*/
+
+// Короткая запись
+
+/*let num = 12345;
+alert(String(num).length);*/
+
+//TRUE AND FALSE 
+
+//alert(true + 3);
+
+//Преобразование к логическому типу в JavaScript
+
+/*console.log(Boolean(0));          // false
+console.log(Boolean(-0));         // false
+console.log(Boolean(+0));         // false
+console.log(Boolean(null));       // false
+console.log(Boolean(false));      // false
+console.log(Boolean(NaN));        // false
+console.log(Boolean(undefined));  // false
+console.log(Boolean(''));         // false
+
+Все значения в консоли выводят False*/
+
+/*let test = Boolean(3);
+alert(test); выведет true*/
+
+/*let test = Boolean(-1);
+alert(test); выведет true*/
+
+/*console.log(Boolean(-1));          // true
+console.log(Boolean(Infinity));    // true
+console.log(Boolean(-Infinity));   // true
+console.log(Boolean('0'));         // true
+console.log(Boolean('false'));     // true
+console.log(Boolean('NaN'));       // true
+console.log(Boolean('null'));      // true
+console.log(Boolean('undefined')); // true*/
+
+/*let test = Boolean(1 / 0);
+alert(test); выведет true*/
+
+//Получение символов строками
+/*let str = 'abcde';
+
+alert(str[0]); // выведет 'a'
+alert(str[1]); // выведет 'b'
+alert(str[2]); // выведет 'c'*/
+
+/*let str = 'abcde';
+let num = 3; // номер символа в переменной
+
+alert(str[num]); // выведет 'd'
+
+В строгом режиме изменять строки нельзя, но их можно читать, это понятно*/
+
+//Но как вывести последний символ строки? Нужно считать количество? Нет, есть специальная функция
+
+//Пусть у нас будет строка
+
+/*let str = 'abcde';
+let last = str.length - 1;
+alert(str[last]); проверяем и выводим e*/
+
+/*let str = 'abcdef';
+alert(str[str.length - 1]); выведет f*/
+
+//https://code.mu/ru/javascript/book/prime/basis/digits-strings/
